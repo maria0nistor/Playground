@@ -73,14 +73,14 @@ hrt_pasc<-ggplot() +
           color = river_color,
           alpha=.9,
           size = .9) +
-  geom_sf(data = baruri$osm_p,
+  geom_sf(data = baruri$osm_points,
           inherit.aes = FALSE,
-          color = river_color,
+          color = 'red',
           size = 1.3,
           alpha = .9) +
-  geom_sf(data = scoli$osm_p,
+  geom_sf(data = scoli$osm_points,
           inherit.aes = FALSE,
-          color = river_color,
+          color = 'green',
           size = 1.3,
           alpha = .9) +
   
